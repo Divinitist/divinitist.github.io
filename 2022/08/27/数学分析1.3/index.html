@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>数学分析讲义1.1 | Divinitist Domain</title>
+  <title>数学分析讲义1.3 | Divinitist Domain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="1.1 逻辑符号关于数学符号的看法 合适的记号可以让思考工作得到惊人的简化。（莱布尼茨） 数学是把不同实体统一命名的艺术。（庞加莱） 自然界这部巨著是用数学语言写成的。（伽利略） 只是用形式化记号而回避普通语言，并非总是明智的。  基本的证明逻辑 古典推证法则：若$A$为真且$A\Rightarrow B$，则$B$为真。 反证法：使用排中律。  某些专门记号 用$◀$表示证明的开始，$▶$表示证">
+  <meta name="description" content="映射关于映射 $f:X\to Y$： ​        若 $f(X)&#x3D;Y$，则称 $f$ 为满射或 $X$ 到 $Y$ 上的映射。 ​        若对 $X$ 中的任何元素 $x_1,x_2$，有 $(f(x_1)&#x3D;f(x_2))\Rightarrow(x_1&#x3D;x_2)$，即不同元素的像不同，则称 $f$ 为单射、嵌入或内射。 ​        若 $f$ 既是单射又是满射，则称 $f$ 为">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数学分析讲义1.1">
-<meta property="og:url" content="https://divinitist.github.io/2022/08/25/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AE%B2%E4%B9%891.1/index.html">
+<meta property="og:title" content="数学分析讲义1.3">
+<meta property="og:url" content="https://divinitist.github.io/2022/08/27/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.3/index.html">
 <meta property="og:site_name" content="Divinitist Domain">
-<meta property="og:description" content="1.1 逻辑符号关于数学符号的看法 合适的记号可以让思考工作得到惊人的简化。（莱布尼茨） 数学是把不同实体统一命名的艺术。（庞加莱） 自然界这部巨著是用数学语言写成的。（伽利略） 只是用形式化记号而回避普通语言，并非总是明智的。  基本的证明逻辑 古典推证法则：若$A$为真且$A\Rightarrow B$，则$B$为真。 反证法：使用排中律。  某些专门记号 用$◀$表示证明的开始，$▶$表示证">
+<meta property="og:description" content="映射关于映射 $f:X\to Y$： ​        若 $f(X)&#x3D;Y$，则称 $f$ 为满射或 $X$ 到 $Y$ 上的映射。 ​        若对 $X$ 中的任何元素 $x_1,x_2$，有 $(f(x_1)&#x3D;f(x_2))\Rightarrow(x_1&#x3D;x_2)$，即不同元素的像不同，则称 $f$ 为单射、嵌入或内射。 ​        若 $f$ 既是单射又是满射，则称 $f$ 为">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-24T16:18:17.000Z">
-<meta property="article:modified_time" content="2022-08-25T05:44:33.780Z">
+<meta property="article:published_time" content="2022-08-27T13:35:55.000Z">
+<meta property="article:modified_time" content="2022-08-28T10:11:56.756Z">
 <meta property="article:author" content="Sherlock Exaser">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="数学分析">
@@ -76,10 +76,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-数学分析讲义1.1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-数学分析1.3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/08/25/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AE%B2%E4%B9%891.1/" class="article-date">
-  <time class="dt-published" datetime="2022-08-24T16:18:17.000Z" itemprop="datePublished">2022-08-25</time>
+    <a href="/2022/08/27/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.3/" class="article-date">
+  <time class="dt-published" datetime="2022-08-27T13:35:55.000Z" itemprop="datePublished">2022-08-27</time>
 </a>
     
   </div>
@@ -90,7 +90,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      数学分析讲义1.1
+      数学分析讲义1.3
     </h1>
   
 
@@ -98,30 +98,38 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="1-1-逻辑符号"><a href="#1-1-逻辑符号" class="headerlink" title="1.1 逻辑符号"></a>1.1 逻辑符号</h3><h4 id="关于数学符号的看法"><a href="#关于数学符号的看法" class="headerlink" title="关于数学符号的看法"></a>关于数学符号的看法</h4><ol>
-<li>合适的记号可以让思考工作得到惊人的简化。（莱布尼茨）</li>
-<li>数学是把不同实体统一命名的艺术。（庞加莱）</li>
-<li>自然界这部巨著是用数学语言写成的。（伽利略）</li>
-<li>只是用形式化记号而回避普通语言，并非总是明智的。</li>
+        <h4 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h4><p>关于映射 $f:X\to Y$：</p>
+<p>​        若 $f(X)=Y$，则称 $f$ 为满射或 $X$ 到 $Y$ 上的映射。</p>
+<p>​        若对 $X$ 中的任何元素 $x_1,x_2$，有 $(f(x_1)=f(x_2))\Rightarrow(x_1=x_2)$，即不同元素的像不同，则称 $f$ 为单射、嵌入或内射。</p>
+<p>​        若 $f$ 既是单射又是满射，则称 $f$ 为双射、一一映射或双方单值映射。</p>
+<p><em>批注：对于单射 $f:X\to Y$，总可以取 $Y$ 的子集 $Y’$，使得映射 $f’:X\to Y’$ 是双射。</em></p>
+<p>若映射 $f:X\to X$ 将 $X$ 的每个元映成自身，则 $f$ 可记作 $e_X$，称之为 $X$ 的恒等映射。</p>
+<p><strong>引理</strong>    $(g\circ f=e_X)\Rightarrow(g是满射)\and(f是单射)$</p>
+<p><strong>证明</strong>    设 $f:X\to Y$，$g:Y\to X$。</p>
+<p>​            若 $g$ 不是满射，则 $g(Y)\sub X$。取 $x\in X-g(Y)$，则 $g(f(x))\sub g(Y)\sub X$，故 $g(f(x))\ne x$，故 $g\circ f\ne e_X$，与条件矛盾。故 $g$ 是满射。</p>
+<p>​            <em>*标法：$X=e_X(X)=g(f(X))\sub g(Y)$，同时有 $g(Y)\sub X$，故 $g(Y)=X$。</em></p>
+<p>​            任取 $x_1,x_2\in X$，则</p>
+<script type="math/tex; mode=display">
+(x_1\ne x_2)\Rightarrow(e_X(x_1)\ne e_X(x_2))\Rightarrow (g(f(x_1))\ne g(f(x_2)))\Rightarrow(f(x_1)\ne f(x_2))</script><p>​            关于最后一步推导：函数的单值性。故 $f$ 是单射。</p>
+<p><strong>命题</strong>    映射 $f:X\to Y,g:Y\to X$ 是互逆的双射当且仅当 $g\circ f=e_X$ 且 $f\circ g=e_Y$。</p>
+<p><strong>证明</strong>    充分性显然。必要性：据引理，$g\circ f=e_X$ 与 $f\circ g=e_Y$ 分别保证了 $f$ 和 $g$ 各自的单射性和满射性。</p>
+<h4 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h4><p>由一些序对 $(x,y)$ 组成的任一集称为一个关系 $\mathcal R$。构成 $\mathcal R$ 的所有序对的第一个元素组成的集 $X$ 称为关系 $\mathcal R$ 的定义域，第二个元素组成的集 $Y$ 称为关系 $\mathcal R$ 的值域。</p>
+<p>$\forall X’ \supset X$，$X’$ 称为 $\mathcal R$ 的出发域；$\forall Y’\supset Y$，$Y’$ 称为 $\mathcal R$ 的到达域。</p>
+<p>常把 $(x,y)\in \mathcal R$ 写作 $x\mathcal Ry$，并说 $x$ 和 $y$ 用关系 $\mathcal R$ 联系着。</p>
+<p>三种关系性质：</p>
+<ol>
+<li>反身性：$a\mathcal Ra$</li>
+<li>对称性：$a\mathcal Rb\Rightarrow b\mathcal Ra$</li>
+<li>传递性：$(a\mathcal Rb)\and(b\mathcal Rc)\Rightarrow(a\mathcal Rc)$</li>
 </ol>
-<h4 id="基本的证明逻辑"><a href="#基本的证明逻辑" class="headerlink" title="基本的证明逻辑"></a>基本的证明逻辑</h4><ol>
-<li>古典推证法则：若$A$为真且$A\Rightarrow B$，则$B$为真。</li>
-<li>反证法：使用排中律。</li>
-</ol>
-<h4 id="某些专门记号"><a href="#某些专门记号" class="headerlink" title="某些专门记号"></a>某些专门记号</h4><ol>
-<li>用$◀$表示证明的开始，$▶$表示证明的结束。</li>
-<li>$:=$为“据定义等于”，例如$\int_a^bf(x)\mathrm dx:=\lim\limits_{\lambda(P)\to0}\sigma(f,P,\xi)$是用右端定义左端。</li>
-<li>$=:$是“据定义等于”的反向用法。</li>
-</ol>
-<h4 id="关于整个数学体系"><a href="#关于整个数学体系" class="headerlink" title="关于整个数学体系"></a>关于整个数学体系</h4><ol>
-<li>我们所会的，总比做形式化时所需要的多些。即，讲解比掌握更难。</li>
-<li>昨天认为明显、简单且不能分的东西，今天可能受到重新审查或把它精确化。</li>
-</ol>
-<h4 id="练习题略"><a href="#练习题略" class="headerlink" title="练习题略"></a>练习题略</h4>
+<p>等价关系：具有反身、对称、传递性，记为 $a\sim b$。</p>
+<p>偏序关系：具有反身、反对称、传递性，记为 $a\preceq b$，读作 $b$ 在 $a$ 之后。</p>
+<p>序关系：满足$\forall a\forall b((a\mathcal Rb)\or(b\mathcal Ra))$的偏序关系，即任意两个元素均能比较。将定义了序关系的集合称作线性序集。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://divinitist.github.io/2022/08/25/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AE%B2%E4%B9%891.1/" data-id="cl7g9xnyd00098kto084v5cj9" data-title="数学分析讲义1.1" class="article-share-link">分享</a>
+      <a data-url="https://divinitist.github.io/2022/08/27/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.3/" data-id="cl7g9xnyc00088kto89lw8i9g" data-title="数学分析讲义1.3" class="article-share-link">分享</a>
       
       
       
@@ -133,19 +141,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/08/25/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AE%B2%E4%B9%891.2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/08/28/%E8%AE%A1%E5%88%92%E8%A1%A8/8%E6%9C%8828%E6%97%A5/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          数学分析讲义1.2
+          8月28日计划
         
       </div>
     </a>
   
   
-    <a href="/2022/08/24/%E9%BB%91%E9%AD%823BOSS%E5%87%BB%E6%9D%80%E8%AE%B2%E4%B9%89/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/08/25/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AE%B2%E4%B9%891.2/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">黑魂3BOSS击杀讲义</div>
+      <div class="article-nav-title">数学分析讲义1.2</div>
     </a>
   
 </nav>

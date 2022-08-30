@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>数学分析讲义1.4 | Divinitist Domain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="集的势（基数）设 $X,Y$ 为二集合。若存在 $X$ 到 $Y$ 上的双射，则称 $X$ 与 $Y$ 等势。 等势关系是等价关系，把所有集合所称的族分成了彼此等价的集合的类。同一等价类中的集有相同数量的元素。 集 $X$ 所在的类叫集 $X$ 的势或基数，记作 $\mathrm{card} X$。若 $X\sim Y$，则写作 $\mathrm{card}X&#x3D;\mathrm{card}Y$。这种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学分析讲义1.4">
+<meta property="og:url" content="https://divinitist.github.io/2022/08/28/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.4/index.html">
+<meta property="og:site_name" content="Divinitist Domain">
+<meta property="og:description" content="集的势（基数）设 $X,Y$ 为二集合。若存在 $X$ 到 $Y$ 上的双射，则称 $X$ 与 $Y$ 等势。 等势关系是等价关系，把所有集合所称的族分成了彼此等价的集合的类。同一等价类中的集有相同数量的元素。 集 $X$ 所在的类叫集 $X$ 的势或基数，记作 $\mathrm{card} X$。若 $X\sim Y$，则写作 $\mathrm{card}X&#x3D;\mathrm{card}Y$。这种">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-28T10:12:21.000Z">
+<meta property="article:modified_time" content="2022-08-30T14:17:14.498Z">
+<meta property="article:author" content="Sherlock Exaser">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="数学分析">
+<meta property="article:tag" content="卓里奇">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Divinitist Domain" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Divinitist Domain</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://divinitist.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-数学分析1.4" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/28/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.4/" class="article-date">
+  <time class="dt-published" datetime="2022-08-28T10:12:21.000Z" itemprop="datePublished">2022-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      数学分析讲义1.4
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="集的势（基数）"><a href="#集的势（基数）" class="headerlink" title="集的势（基数）"></a><strong>集的势（基数）</strong></h4><p>设 $X,Y$ 为二集合。若存在 $X$ 到 $Y$ 上的双射，则称 $X$ 与 $Y$ 等势。</p>
+<p>等势关系是等价关系，把所有集合所称的族分成了彼此等价的集合的类。同一等价类中的集有相同数量的元素。</p>
+<p>集 $X$ 所在的类叫集 $X$ 的势或基数，记作 $\mathrm{card} X$。若 $X\sim Y$，则写作 $\mathrm{card}X=\mathrm{card}Y$。这种结构的意义在于它使我们不必数数就能比较集合的元素的数量。</p>
+<blockquote>
+<p>批注：此处的 $\mathrm{card}X$ 实际上是一个类，但一般作数值比较之用。</p>
+</blockquote>
+<p>一集合能与其自己的部分等势，是这个集合为无穷集的特征。</p>
+<p>先定义一个偏序关系：$(\mathrm{card}X\le\mathrm{card}Y):=(\exist Z\sub Y|\mathrm{card}X=\mathrm{card}Z)$。</p>
+<p>可以证明：</p>
+<ol>
+<li>$(\mathrm{card}X\le\mathrm{card}Y)\and(\mathrm{card}Y\le\mathrm{card}Z)\Rightarrow(\mathrm{card}X\le\mathrm{card}Z)$（传递性）</li>
+<li>$\mathrm{card}X=\mathrm{card}X$（反身性）</li>
+<li>$(\mathrm{card}X\le\mathrm{card}Y)\and(\mathrm{card}Y\le\mathrm{card}X)\Rightarrow(\mathrm{card}X=\mathrm{card}Y)$（Schröder-Bernstein定理）（反对称性）</li>
+<li>$\forall X\forall Y(\mathrm{card}X\le\mathrm{card}Y)\or(\mathrm{card}Y\le\mathrm{card}X)$（Cantor定理）（任二元素均能比较）</li>
+</ol>
+<p>故等势关系所划分的基数类间具有序关系。</p>
+<p>定义$\mathrm{card}X&lt;\mathrm{card}Y:=(\mathrm{card}X\le\mathrm{card}Y)\and(\mathrm{card}X\ne\mathrm{card}Y)$。</p>
+<p><strong>Cantor定理</strong>    $\mathrm{card}X\le\mathrm{card}\mathcal P(X)$，其中 $\mathcal P(X)$ 是 $X$ 的所有子集的集合。</p>
+<p><strong>证明</strong>    当 $X=\empty$ 时，$\mathcal P(X)$ 也为 $\empty$，故 $\mathrm{card}X=\mathrm{card}\mathcal P(X)$。</p>
+<p>​            因为 $\mathcal P(X)$ 含有 $X$ 的一切单元素子集，所以 $\mathrm{card}X\le\mathrm{card}\mathcal P(X)$。</p>
+<blockquote>
+<p>​        此处误将偏序关系理解为$(\mathrm{card}X\le\mathrm{card}Y):=(\exist Z\sub Y|X=Z)$，实际上并不需要 $X$ 本身是 $Y$ 的子集。</p>
+</blockquote>
+<p>​            只需证当 $X\ne\empty$ 时，$\mathrm{card}X\ne\mathrm{card}\mathcal P(X)$。</p>
+<p>​            假设此结论不成立，即存在双射 $f: X\to \mathcal P(X)$。考查集合 $A=\{x\in X|x\notin  f(x)\}$，易知 $A\in \mathcal P(X)$ ，故可以找到 $x_0\in X$ ，使得 $f(x_0)=A$ 。这个元素 $x_0$ 既不满足 $x_0\in A$ （否则 $x_0\in f(x_0)=A$ ，违背 $A$ 的定义），也不满足 $x_0\notin A$ （否则 $x_0\notin f(x_0)=A$ ，则按照 $A$ 的定义，应当有 $x_0\in A$ ）。故假设不成立。</p>
+<blockquote>
+<p>​        阅读这一证明时容易出现惯性上的错误，即无法理解 $x_0\notin f(x_0)$ 的含义。实际上 $X$ 是元素的集合， $\mathcal P(X)$ 是集合的集合，所以从 $X$ 到 $\mathcal P(X)$ 的双射一定是从元素到集合的映射。</p>
+<p>​        本证明的核心是利用排中律证明双射不存在。</p>
+</blockquote>
+<h4 id="公理化集合论"><a href="#公理化集合论" class="headerlink" title="公理化集合论"></a>公理化集合论</h4><p>$1\degree$    <strong>容积公理</strong>    对于集合 $A$ 和 $B$ ， $(A=B)\Leftrightarrow \forall x((x\in A)\Leftrightarrow (x\in B))$。</p>
+<blockquote>
+<p>​    这一公理实际上指出，集合由且仅由其所包含的元素集聚所唯一确定。</p>
+</blockquote>
+<p>$2\degree$    <strong>分出公理</strong>    对任何集合 $A$ 及性质 $P$ ，存在集合 $B=\{x\in A|P(x)\}$。</p>
+<blockquote>
+<p>​    这一公理使得子集可以被取到，并在此基础上让差集和补集计算成为可能。而由以上两个公理可以推出空集的唯一性。</p>
+</blockquote>
+<p>$3\degree$    <strong>并公理</strong>    对于由集合构成的任何集合 $M$ ，存在集合 $\cup M$ ，成为集合 $M$ 的并，它的元素恰好是 $M$ 所含元素的元素。</p>
+<blockquote>
+<p>​    这条公理的定义方式比较怪，可能是为了避开对求并的集合的具体数量的讨论。这里可以把无穷个集求并划归到无穷集的定义中去。</p>
+</blockquote>
+<p>$4\degree$    <strong>对公理</strong>    对于任意集合 $X$ 与 $Y$ ，存在一个集合 $Z$ ，使得 $X$ 与 $Y$ 是它仅有的元素。</p>
+<blockquote>
+<p>​    集合 $Z$ 用 $\{X,Y\}$ 表示，并称之为 $X$ 与 $Y$ 的无序对。如果 $X=Y$ ，则 $Z$ 只有一个元素。在无序对的基础上可以定义出有序对：</p>
+<script type="math/tex; mode=display">
+(X,Y):=\{\{X,X\},\{X,Y\}\}</script><p>​    与某些定理组合可以由序对引进集的直积。</p>
+</blockquote>
+<p>$5\degree$    <strong>子集之集公理</strong>    对于任意集合 $X$ ，存在集合 $\mathcal P(X)$ ，它的元素恰好就是 $X$ 的一切子集。</p>
+<blockquote>
+<p>​    <font color="red">假设存在包含所有集的集合 $U$ ，则根据Cantor定理，在集合 $\mathcal P(U)$ 中有不属于 $U$ 的元素，所以不存在所有集之集。从而避开了Russell悖论。</font></p>
+</blockquote>
+<p>定义集合 $X$ 的后继集 $X^+:=X\cup\{X\}$。</p>
+<p>称一个包含空集及其中任何一集的后续集的集合为归纳集。</p>
+<p>$6\degree$    <strong>无穷公理</strong>    归纳集存在。</p>
+<blockquote>
+<p>​    在此基础上可建立自然数集 $\N_0$ 的标准模型，方法是把 $\N_0$ 定义为一切归纳集的<strong>交</strong>，即<strong>最小归纳集</strong>。 $\N_0=\{\empty,\{\empty\},\dots\}$ 。 </p>
+</blockquote>
+<p>$7\degree$    <strong>置换公理</strong>    设 $\mathcal F(x,y)$ 是一个命题公式，使得 $\forall x_0\in X$，$\exist!y_0$ 使得 $\mathcal F(x_0,y_0)$ 成立。此时 $\exist x\in X$，使得 $\mathcal F(x,y)$ 成立的那些 $y$ 能组成集合。</p>
+<blockquote>
+<p>​    这个公理的翻译烂得像屎，但勉强能读。</p>
+</blockquote>
+<p>公理 $1\degree\sim7\degree$ 组成了集合论公理系统，即Zermelo-Fraenkel公理系统。</p>
+<p>$8\degree$    <strong>选择公理（Zermelo公理）</strong>    对于任意不空集的族，存在一个集合 $C$，使对所给族中的每个集合 $X$，集合 $X\cap C$ 恰好只含一个元素。</p>
+<blockquote>
+<p>​    即，恰好可从族中的每个集中选出一个代表，由它们组成集合 $C$。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://divinitist.github.io/2022/08/28/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.4/" data-id="cl7g9xnye000c8kto85u3bd68" data-title="数学分析讲义1.4" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%93%E9%87%8C%E5%A5%87/" rel="tag">卓里奇</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" rel="tag">数学分析</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/08/30/%E5%8F%AA%E7%8B%BCBOSS%E5%87%BB%E6%9D%80%E8%AE%B2%E4%B9%89/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          只狼BOSS击杀讲义
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/08/28/%E8%AE%A1%E5%88%92%E8%A1%A8/8%E6%9C%8828%E6%97%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">8月28日计划</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%93%E9%87%8C%E5%A5%87/" rel="tag">卓里奇</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" rel="tag">数学分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E5%88%92/" rel="tag">计划</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%8D%93%E9%87%8C%E5%A5%87/" style="font-size: 16.67px;">卓里奇</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 20px;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" style="font-size: 16.67px;">数学分析</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.33px;">游戏</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">笔记</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 10px;">计划</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/08/30/%E4%B8%98%E6%88%90%E6%A1%90%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">丘成桐讲座笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/30/%E5%8F%AA%E7%8B%BCBOSS%E5%87%BB%E6%9D%80%E8%AE%B2%E4%B9%89/">只狼BOSS击杀讲义</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/28/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.4/">数学分析讲义1.4</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/28/%E8%AE%A1%E5%88%92%E8%A1%A8/8%E6%9C%8828%E6%97%A5/">8月28日计划</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/27/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%901.3/">数学分析讲义1.3</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Sherlock Exaser<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
+</html>
